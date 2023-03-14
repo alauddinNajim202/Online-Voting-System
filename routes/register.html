@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Online Voting System- Register</title>
+        <link rel="stylesheet" href="../css/style.css">
+        
+    </head>
+
+    <body>
+
+        <style>
+            #address1{
+                width: 69%;
+            }
+
+            #image_section input {
+                
+                width: 48%;
+                height: 40px;
+                padding: 10px;
+                margin-left: 20px;
+                background-color: black;
+                color: cyan;
+                border: 2px solid whitesmoke;
+                
+                
+            }
+
+            #role select{
+                width: 58%;
+                padding: 15px;
+                border-radius: 6px;
+                background-color: black;
+                color: antiquewhite;
+                border: 2px solid whitesmoke;
+    
+            }
+
+            
+        </style>
+        <div id = "header_section">
+            <h1>Online Voting System</h1>
+        </div>
+          
+            <hr><br>
+
+        <form action="../api/register.php" method="post" enctype="multipart/form-data">
+
+            <input type="text" name="name" placeholder="Enter Name ">
+            <input type="number" name="mobile" placeholder="Enter number "><br><br>
+            <input type="password" name="password" placeholder="Enter password">
+            <input type="password" name="cpassword" placeholder="Confirm password"><br><br>
+            <input id ="address1" type="text" name="address" placeholder="Address"><br><br>
+            <div id = "image_section">
+                 Upload Image: <input  type="file" name="photo"><br><br>
+            </div>
+               
+                <center>
+                    <div id = "role">
+                        Select Role: <select name="role" >
+                            <option value="1">Voter</option>
+                            <option value="2">Group</option>
+        
+                        </select>
+        
+                       </div>
+
+                </center>
+
+              
+                <br><br>
+
+                <button id = "btn">Register</button><br><br>
+                Already login ? <a href="#">Login Here</a>
+
+        </form>
+        
+    </body>
+</html>

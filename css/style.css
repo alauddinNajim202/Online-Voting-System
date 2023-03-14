@@ -1,0 +1,50 @@
+body{
+    text-align: center;
+    background-color: #303952;
+}
+form{
+    background-color: powderblue;
+    padding: 20px;
+    width: 50%;
+    margin-left: 22%;
+    border-radius: 5px;
+    
+}
+
+#header_section{
+    padding: 5px;
+}
+
+#header_section h1 {
+    font-family: cursive;
+    color: khaki;
+}
+
+input{
+    padding: 10px;
+    color: white;
+    border-radius: 6px;
+    background-color: black;
+    border: 2px solid whitesmoke;
+    
+}
+
+#dropbox{
+    padding: 10px;
+    border-radius: 6px;
+    background-color: black;
+    width: 36%;
+    color: aliceblue;
+    
+
+}
+#btn{
+   width: 130px;
+   height: 40px;
+   background-color: black;
+   color: whitesmoke;
+   border-radius: 10px;
+}
+a{
+    font-size: 21px;
+}
